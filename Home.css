@@ -1,0 +1,874 @@
+html
+
+{
+
+height: -webkit-fill-available;
+
+}
+
+body 
+
+{
+
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0) !important;
+    height: -webkit-fill-available;
+
+}
+
+.header-container
+
+{
+
+    width: 100%;
+    height: 37.03704vh;
+    position: relative;
+
+}
+
+.middle
+
+{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.sbg 
+
+{
+
+    display: inline-flex;
+    max-width: 7120px;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+
+    animation: sOpacity;
+    animation-duration: 3s;
+
+
+}
+
+
+.s1
+
+{
+
+    height: calc(100vh - 63vh);
+    max-width: 7120px;
+    object-fit:cover;
+    margin: 0;
+    animation:sroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    overflow: hidden;
+    
+}
+
+@keyframes sroll 
+
+    {
+    
+        0%
+
+        {
+
+            transform: translateX(0%);
+           
+
+        }
+
+        100%
+
+        {
+
+            transform: translateX(-200%);
+            
+        }
+
+    }
+
+    @keyframes sOpacity
+
+    {
+    
+        from
+    
+        {
+    
+            opacity: 0%;
+           
+    
+        }
+    
+        to
+    
+        {
+    
+            opacity: 100%;
+            
+        }
+    
+    }    
+
+.spriter 
+
+{
+
+    position: fixed;
+    top:20vh;
+    left: 5vw;
+
+}
+
+#r 
+
+{
+
+    width: calc(100% - 80%);
+    height: calc(100% - 80%);
+
+}
+
+.middle-top
+
+{
+
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ctlslidein 1.5s ease-in-out forwards; 
+
+}
+
+@keyframes ctlslidein{from { margin-left: -50vw; margin-top: -50vw;} to {margin-left:0vw; margin-top: 0vw;}}
+
+
+    .lb1,.lb2,.lb3,.lb4
+
+    {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: visible;
+        display: none;
+        position: absolute;
+
+    }
+
+    .lb1,.lb5
+
+    {
+
+        animation: lbop1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 10s;
+
+    }
+
+    .lb2,.lb6
+
+    {
+
+        animation: lbop2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 6s;
+        opacity: 0;
+
+    }
+
+    .lb3,.lb7
+
+    {
+
+        animation: lbop3;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 4s;
+        opacity: 0;
+
+    }
+
+    .lb4,.lb8
+
+    {
+
+        animation: lbop4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 1s;
+        opacity: 0;
+
+    }
+
+    .lb5,.lb6,.lb7,.lb8
+
+    {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        position: absolute;
+
+    }
+
+
+    @keyframes lbop1
+
+{
+
+    from    {opacity:30%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop2
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop3
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop4 
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+    
+}
+    
+    .l1
+
+    {
+
+        display: none;
+
+    }
+
+    .l2 
+
+    {
+
+        display: none;
+
+    }
+
+    .l3
+
+    {
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+
+    }
+
+    .l4
+
+    {
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+
+
+
+.middle-center
+
+{
+
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    z-index: 1;
+    margin-top: 11vh; 
+    animation:  2s 4s forwards;
+    justify-content: center;
+
+}
+
+.sbdiv
+
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    filter: blur(15px);
+    animation: focusin 2s forwards 2s;
+    opacity: 0%;
+
+}
+
+@keyframes focusin
+
+{
+
+    00%
+
+    {
+
+        filter: blur(15px);
+        opacity: 0%;
+
+    }
+
+    100%
+
+    {
+
+        filter: blur(0px);
+        opacity: 100%;
+
+    }
+
+}
+
+.searchbar
+
+{
+
+    display: flex;
+    text-align: center;
+    max-width: 100%;
+    width: 40vw;
+    padding: 1vw;
+    height: 100%;
+    border: 1px dashed blueviolet;
+    border-right: 0px;
+    background-color: black;
+    margin-left: 15%;
+
+}
+
+.searchbar:hover
+
+{
+
+    background-color: lightpink;
+
+}
+
+.searchbar::placeholder
+
+{
+
+    color: cyan;
+    font-family:"press Start 2P" ;
+    font-size: 0.6vw;
+    text-align: center;
+
+}
+
+.searchbar:focus
+
+{
+    outline: none;
+    border-color: red;
+    color: red;
+    font-size: 1vw;
+    font-family:"press Start 2P" ;
+    background-color: rgb(252, 179, 179);
+    transition: 0.3s;
+
+}
+
+.searchbtn
+
+{
+
+    cursor: pointer;
+    max-width: 4vw;
+    padding: 3px;
+    height: -webkit-fill-available;
+    padding: 0.2vw;
+    display: flex;
+    border: 1px dashed blueviolet;
+    border-left: 0px;
+    background-color: black;
+    align-items: center;
+
+}
+
+.searchbtn:hover
+
+{
+
+    background-color: rgb(252, 179, 179);
+
+}
+
+.sbi1
+
+{
+
+    width: 2vw;
+    height: 2vw;
+
+}
+
+
+.sbi2
+
+{
+
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+
+}
+
+.sbi2:hover
+
+{
+
+    visibility: hidden;
+
+}
+
+.lin-sup
+
+{
+
+    display: flex;
+    margin-right: 6%;
+
+}
+
+.lin
+
+{
+
+    color: cyan;
+    width: 5vw;
+    border:dotted 2px blueviolet;
+    
+}
+
+.sup 
+
+{
+
+    color: cyan;
+    border: 2px dotted blueviolet;
+    margin-left: 1vw;
+
+}
+
+#under
+
+{
+
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+
+}
+
+#over
+
+{
+
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+}
+
+a:link
+
+{
+    
+    display: flex;
+    background-color: black;
+    padding: 1vw;
+    font-weight: bold;
+    box-shadow: 2px;
+    text-decoration: none;
+    font-size: 1vw;
+    align-items: center;
+    height: -webkit-fill-available;
+    width: 7vw;
+    text-align: center;
+    
+}
+
+.fix 
+
+{
+
+    display:flex;
+    justify-content: center;
+    margin-left: 14%;
+
+}
+
+a:hover, a:active 
+
+{
+    
+    background-color:lightpink;
+    color: cyan;
+
+}
+
+.pop
+
+{
+
+    color: cyan;
+    height: -webkit-fill-available;
+    border: 2px dotted blueviolet;
+    margin-right: 1vw;
+    margin-left: 10%;
+    
+}
+
+.header-right
+
+{
+
+    width: 90%; 
+    height: 22vh; 
+    position: fixed;
+    top: 12.5vh;
+    right: 0;
+    z-index: 0; 
+
+}
+
+.htb 
+
+{
+
+    margin-top: 15%;
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+
+}
+
+.categories
+
+{
+
+    font-size: calc(2vw + 0.8vh);
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    color: white;
+    font-family: "press Start 2p";
+
+}
+
+.about
+
+{
+
+    background-color: pink;
+    margin: 1vw;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.about-head
+
+{
+
+    margin-left: 2vw;
+    margin-top:1vh;
+    margin-bottom: 0;
+    white-space: nowrap;
+    font-size: calc(2vw + 0.8vh);
+    font-family: "press Start 2p";
+
+}
+
+.about-text
+
+{
+
+    padding-left: 4vw;
+    padding-top: 0vw;
+    margin: 0vw;
+    margin-top: 1vw;
+    padding-bottom: 1vh;
+    white-space: nowrap;
+    font-size: calc(1vw + 0.7vh);
+
+
+}
+
+.main-container
+
+{
+
+    position: fixed;
+    background-color: purple;
+    width: calc(100vw - 2vw);
+    height: -webkit-fill-available;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    padding: 1vw;
+    box-sizing: border-box;
+    border: 2px red solid;
+    overflow: auto;
+
+}
+
+
+@media only screen and (min-width:720px)
+
+{
+
+    .main-container
+
+    {   
+
+    width:calc(100vw - 20vw) ;
+    margin-top: 1vh;
+
+    }
+
+    .spriter 
+
+    {
+
+        position: fixed;
+        top:13vh;
+        left: 15vw;
+
+    }
+
+    #r 
+
+    {
+
+        width: calc(100% - 85%);
+        height: calc(100% - 85%);
+
+    }
+
+    .middle-top 
+
+    {
+
+        width: 20%;
+        height: 37vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .l1 
+
+    {
+
+        position:absolute;
+        display: flex;
+        object-fit: cover;
+        overflow: visible;
+        left: 1%;
+        top: 1%;
+        height:calc(100% - 45%);
+
+    }
+
+    .l2 
+
+    {
+
+        position: absolute;
+        display: flex;
+        object-fit:cover;
+        overflow: visible;
+        left: 1%;
+        top: 1%;
+        height:calc(100% - 45%);
+
+        
+    }
+
+    .l3 
+
+    {
+
+        display: none;
+
+    }
+
+    .l4 
+
+    {
+
+        display: none;
+
+    }
+
+    .lb1,.lb2,.lb3,.lb4
+
+    {
+
+        display: block;
+
+    }
+
+    .lb5,.lb6,.lb7,.lb8
+
+    {
+
+        display: none;
+
+    }
+    
+    .middle-center
+
+    {
+
+        margin-top: 1vh;
+
+    }
+
+
+    .pop
+
+    {
+
+    margin-left: 28%;
+
+    }
+
+    .fix 
+
+    {
+
+    margin-left: 15%;
+
+    }
+
+    a:link 
+
+    {
+
+        width: max-content;
+
+    }
+
+    .searchbar 
+
+    {
+
+        width: 20vw;
+        margin-left: 1%;
+
+    }
+
+    .header-right
+
+    {
+
+        top: 10vh;
+        width: 80%; 
+        height: 30vh; 
+        position: fixed;
+        right: 0;
+        z-index: 0; 
+
+    }
+
+    .htb 
+
+    {
+
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin-top: 0;
+
+    }
+
+    .categories
+
+    {
+
+        margin: 1vw;
+
+    }
+
+    .about
+
+    {
+
+        float: right ;
+        width: 16vw;
+        height: 40vh;
+        margin-top: 15vh;
+
+    }
+
+
+}
+
+.main
+
+{
+
+    background-color: aqua;
+    box-sizing: border-box;
+
+}
+
+
+
